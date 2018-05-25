@@ -32,9 +32,14 @@ namespace Assignment_01
                 PayrollReportFrm prf = new PayrollReportFrm();
                 prf.Show();
             }
+            else
+            {
+                lblInfo.Text = "Wrong password. Only " + (3 - attemptNo) + " left. Then program will terminate Automatically.";
+            }
             if (attemptNo >= 3)
             {
                 lblInfo.Text = "Program will terminate. Number of attempts is exceeded!";
+                this.Close();
             }
         }
     }

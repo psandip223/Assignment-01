@@ -53,6 +53,7 @@
     <Compile Include="LogInFrm.Designer.cs">
       <DependentUpon>LogInFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PayrollReport.cs" />
     <Compile Include="PayrollReportFrm.cs">
       <SubType>Form</SubType>
     </Compile>

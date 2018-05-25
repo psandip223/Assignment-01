@@ -16,5 +16,17 @@ namespace Assignment_01
         {
             InitializeComponent();
         }
+
+        private void OnClickCalculateGrossPay(object sender, EventArgs e)
+        {
+            string fullName = txtName.Text;
+            double hourlyRate = double.Parse(txtHourlyRate.Text);
+            double hours = double.Parse(txtHoursWorked.Text);
+
+            PayrollReport pr = new PayrollReport(fullName, hourlyRate, hours);
+            double grossPay = pr.CalculatePay();
+
+            label1.Text = grossPay.ToString();
+        }
     }
 }
