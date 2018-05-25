@@ -35,7 +35,6 @@
             this.txtHourlyRate = new System.Windows.Forms.TextBox();
             this.txtHoursWorked = new System.Windows.Forms.TextBox();
             this.btnCalculateGrossPay = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // lblName
@@ -96,20 +95,11 @@
             this.btnCalculateGrossPay.Text = "Calculate Gross Pay";
             this.btnCalculateGrossPay.UseVisualStyleBackColor = true;
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(77, 154);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 95);
-            this.listBox1.TabIndex = 7;
-            // 
             // PayrollReportFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.btnCalculateGrossPay);
             this.Controls.Add(this.txtHoursWorked);
             this.Controls.Add(this.txtHourlyRate);
@@ -133,6 +123,5 @@
         private System.Windows.Forms.TextBox txtHourlyRate;
         private System.Windows.Forms.TextBox txtHoursWorked;
         private System.Windows.Forms.Button btnCalculateGrossPay;
-        private System.Windows.Forms.ListBox listBox1;
     }
 }
